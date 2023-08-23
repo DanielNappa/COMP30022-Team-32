@@ -6,6 +6,7 @@
         (moving ?t ?l1 ?l2)
         (packageUnloaded ?p ?l)
         (packageLoaded ?p ?t)
+        (movePackage ?p ?p)
     
     )
 
