@@ -1,14 +1,9 @@
-(define
-    (animation Trucks)
+(define (animation Trucks)
 
     ; dont know if this is valid
     (:type location
         :parameters (?x)
-        :effect (
-            (assign
-                (?x x y)
-                (function distribute_grid_around_point
-                    (objects ?x)))
+        :effect ((assign (?x x y) (function distribute_grid_around_point (objects ?x)))
         )
 
     )
@@ -34,13 +29,8 @@
     (:predicate connected
         :parameters (?l1 ?l2)
         :effect (
-            (equal
-                (?l1 x)
-                (add
-                    (?l2 x) 100))
-            (action
-                (function draw_line
-                    (objects ?l1 ?l2)))
+            (equal (?l1 x) (add (?l2 x) 100))
+            (action (function draw_line (objects ?l1 ?l2)))
         )
     )
 
