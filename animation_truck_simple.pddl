@@ -1,10 +1,11 @@
 (define (animation Trucks)
 
-    ; not working
+    ; not working (commented for later fix)
     (:predicate at
         :parameters (?x ?l)
         :effect (
-            (equal (?x x) (?l x))
+            ; NOTE: (equal (?x x) 200) works but not when trying to reference ?l's x
+            ;(equal (?x x) (?l x))
             ;(equal (?x y) (add (?l y) 20))
             :priority 0
         )
@@ -22,12 +23,13 @@
         :parameters (?l1 ?l2)
         :effect (
             (equal (?l1 x) (add (?l2 x) 500))
-            ;(action (function draw_line (objects ?l1 ?l2)))
+            ; not drawing the line between objects
+            (action (function draw_line (objects ?l1 ?l2)))
             :priority 1
         )
     )
     
-    
+    ; not working (commented for later fix)
     (:predicate time-now
         :parameters (?t)
         :effect (
@@ -35,7 +37,8 @@
             ;(equal (?t y) 1000)
         )
     )
-
+    
+    ; not showing up
     (:visual current-time
         :type custom
         :properties (
@@ -65,7 +68,6 @@
         )
     )
 
-    ; can't predefine truck for some reason
     (:visual truck - locatable
         :type predefine
         :objects (%tr)
@@ -81,7 +83,6 @@
         )
     )
 
-    ; not showing up for some reason
     (:visual truckarea
         :type predefine
         :objects (%a)
