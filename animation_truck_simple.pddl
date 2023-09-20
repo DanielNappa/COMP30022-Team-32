@@ -34,42 +34,55 @@
         )
     )
 
+    (:visual time
+        :type predefine
+        :objects (%t)
+        :properties (
+            (showName true)
+            (x 0)
+            (y 100)
+            (color ORANGE)
+            (width 400)
+            (height 200)
+            (depth 2)
+        )
+    )
+
     ; can't predefine truck for some reason
     (:visual truck
-        :type default
-        ;:objects truck
-        :properties(
+        :type predefine
+        :objects (%tr)
+        :properties (
             (prefabImage img-truck)
-            (showName false)
+            (showName true)
             (x 100)
             (y 100)
             (color BLUE)
-            (width 40)
-            (height 20)
-            (depth 2)
+            (width 100)
+            (height 100)
+            (depth 0)
         )
     )
 
     ; not showing up for some reason
     (:visual truckarea
         :type predefine
-        :objects truckarea
-        :properties(
+        :objects (%a)
+        :properties (
             (prefabImage img-truck)
-            (showName false)
+            (showName true)
             (x 200)
             (y 200)
-            (color BLACK)
+            (color ORANGE)
             (width 400)
             (height 200)
-            (depth 1)
+            (depth 2)
         )
     )
 
     (:visual package
         :type predefine
-        :objects
-        (%p)
+        :objects (%p)
         :properties(
             (prefabImage img-box)
             (showName false)
@@ -84,8 +97,7 @@
 
     (:visual location
         :type predefine
-        :objects
-        (%l)
+        :objects (%l)
         :properties(
             (prefabImage img-box)
             (showName TRUE)
