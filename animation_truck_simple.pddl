@@ -1,19 +1,12 @@
 (define (animation Trucks)
 
-    ; dont know if this is valid
-    (:type location
-        :parameters (?x)
-        :effect ((assign (?x x y) (function distribute_grid_around_point (objects ?x)))
-        )
-
-    )
-
     ; not working
     (:predicate at
         :parameters (?x ?l)
         :effect (
-            ;(equal (?x x) (add (?l x) 20))
+            (equal (?x x) (?l x))
             ;(equal (?x y) (add (?l y) 20))
+            :priority 0
         )
     )
 
@@ -29,7 +22,8 @@
         :parameters (?l1 ?l2)
         :effect (
             (equal (?l1 x) (add (?l2 x) 500))
-            (action (function draw_line (objects ?l1 ?l2)))
+            ;(action (function draw_line (objects ?l1 ?l2)))
+            :priority 1
         )
     )
     
@@ -112,8 +106,8 @@
             (x 100)
             (y 0)
             (color YELLOW)
-            (width 40)
-            (height 20)
+            (width 50)
+            (height 50)
             (depth 5)
         )
     )
@@ -124,8 +118,8 @@
         :properties(
             (prefabImage img-house)
             (showName TRUE)
-            (x 0)
-            (y 0)
+            (x 100)
+            (y 100)
             (color RED)
             (width 200)
             (height 200)
