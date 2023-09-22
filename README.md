@@ -16,3 +16,8 @@ This project aims to create a PDDL (Planning Domain Definition Language) animati
   - Custom-designed truck images for a unique animation experience
   - Integration with existing domain problem
   - User-friendly interface
+
+### Contributors
+@meetcookers
+@DanielNappa
+@PhongDavidVu
