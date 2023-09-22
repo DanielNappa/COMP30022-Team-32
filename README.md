@@ -3,7 +3,7 @@
 ### Table of content
   - [Overview](#overview)
   - [Features](#features)
-  
+
 
 ### Overview
 This project aims to create a PDDL (Planning Domain Definition Language) animation for an existing domain problem. The animation will visualize the domain problem's states and transitions, enhancing the user's understanding and interaction with the PDDL model.
@@ -18,14 +18,8 @@ This project aims to create a PDDL (Planning Domain Definition Language) animati
   - User-friendly interface
 
 ### Contributors
-- [Daniel Nappa](#https://github.com/DanielNappa)
-
-
-
-
-
-
-
-
-
-
+  - [Phu Truong](https://github.com/meatcooker)
+  - [Eva Worsfold]
+  - [Nicholas Peace]
+  - [Phong Vu](https://github.com/PhongDavidVu)
+  - [Daniel Nappa](https://github.com/DanielNappa)
