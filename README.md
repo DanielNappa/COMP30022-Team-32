@@ -19,7 +19,7 @@ This project aims to create a PDDL (Planning Domain Definition Language) animati
 
 ### Contributors
   - [Phu Truong](https://github.com/meatcooker)
-  - [Eva Worsfold]
+  - [Eva Worsfold](https://github.com/eworsfold)
   - [Nicholas Peace](https://github.com/TheWillni)
   - [Phong Vu](https://github.com/PhongDavidVu)
   - [Daniel Nappa](https://github.com/DanielNappa)
