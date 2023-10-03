@@ -32,19 +32,18 @@
     ; not working (commented for later fix)
     (:predicate time-now
         :parameters (?t)
+        :custom currtime
         :effect (
-            ;(equal (?t x) 1000)
-            ;(equal (?t y) 1000)
+            ;(equal (currtime label) ("HI"))
         )
     )
     
-    ; not showing up
     (:visual current-time
         :type custom
+        :objects currtime
         :properties (
             (prefabImage img-green)
-            (label "CURRENT TIME")
-            (showName true)
+            (showName false)
             (x 1000)
             (y 1000)
             (color GREEN)
@@ -59,7 +58,7 @@
         :objects (%t)
         :properties (
             (showName true)
-            (x 0)
+            (x 100)
             (y 500)
             (color ORANGE)
             (width 400)
